@@ -1,5 +1,6 @@
-typedef int Rank;
 #define DEFAULT_CAPACITY 3
+
+typedef int Rank;
 
 template <typename T> class Vector {
 
