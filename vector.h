@@ -59,8 +59,8 @@ public:
     }
     Rank search(T const &e, Rank lo, Rank hi) const;
 
-    T &operator[] (Rank r) const;
-    Vector<T> &operator= (Vector<T> const&);
+    T &operator[](Rank r) const;
+    Vector<T> &operator=(Vector<T> const&);
     T remove (Rank r);
     int remove(Rank lo, Rank hi);
     Rank insert(Rank r, T const &e);
@@ -69,7 +69,7 @@ public:
     void sort() { sort(0, _size); }
     void unsort(Rank lo, Rank hi);
     void unsort() { unsort(0, _size); }
-    int deduplicate();
+    int deduplicate(); // todo function
     int uniquify();
     void traverse(void (*) (T&));
     template <typename VST> void traverse(VST&);
