@@ -1,5 +1,5 @@
 template <typename T>
-Vector<T>& Vector<T>::operator= (Vector<T> const& T) {
+Vector<T> &Vector<T>::operator= (Vector<T> const &T) {
     if (_elem) {
         delete [] _elem;
     }
