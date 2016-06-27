@@ -11,7 +11,7 @@ protected:
     void init();
     int clear();
     void copyNodes(ListNodePosi(T), int);
-    void merge(ListNodePosi(T)&, List<T>&, ListNodePosi(T), int);
+    void merge(ListNodePosi(T)&, int, List<T>&, ListNodePosi(T), int);
     void mergeSort(ListNodePosi(T), int);
     void selectionSort(ListNodePosi(T), int);
     void insertionSort(ListNodePosi(T), int);
