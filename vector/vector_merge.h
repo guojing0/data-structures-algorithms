@@ -13,4 +13,5 @@ template <typename T> void Vector<T>::merge(Rank lo, Rank mi, Rank hi) {
             A[i++] = C[k++];
         }
     }
+    delete [] B;
 }
