@@ -69,8 +69,9 @@ public:
     void sort() { sort(0, _size); }
     void unsort(Rank lo, Rank hi);
     void unsort() { unsort(0, _size); }
-    int deduplicate(); // todo function
+    int deduplicate();
     int uniquify();
-    void traverse(void (*) (T&));
-    template <typename VST> void traverse(VST&);
+    template <typename VST> void traverse(VST&); // void traverse(void (*) (T&));
 };
+
+#include "vector_implement.h"
