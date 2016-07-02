@@ -1,10 +1,11 @@
-template <typename T> bool Vector<T>::bubble(Rank lo, Rank hi) {
+template <typename T>
+bool Vector<T>::bubble(Rank lo, Rank hi) {
     bool sorted = true;
 
     while (++lo < hi) {
-        if (_item[lo - 1] > _item[lo]) {
+        if (_elem[lo - 1] > _elem[lo]) {
             sorted = false;
-            swap(_item[lo - 1], _item[lo]);
+            swap(_elem[lo - 1], _elem[lo]);
         }
     }
     return sorted;

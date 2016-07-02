@@ -1,4 +1,4 @@
-template <typename t>
+template <typename T>
 void Vector<T>::quickSort(Rank lo, Rank hi) {
     if (hi - lo < 2) {
         return;

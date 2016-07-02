@@ -1,5 +1,5 @@
 template <typename T>
-static Rank Vector<T>::binSearch(T* A, T const& e, Rank lo, Rank hi) {
+Rank Vector<T>::binSearch(T* A, T const& e, Rank lo, Rank hi) {
     while (lo < hi) {
         Rank mi = (lo + hi) >> 1;
 
