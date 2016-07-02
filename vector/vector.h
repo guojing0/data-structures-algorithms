@@ -17,7 +17,6 @@ protected:
     void mergeSort(Rank lo, Rank hi);
     Rank partition(Rank lo, Rank hi);
     void quickSort(Rank lo, Rank hi);
-    void heapSort(Rank lo, Rank hi);
 
 public:
     Vector(int c = DEFAULT_CAPACITY, int s = 0, T v = 0) {
