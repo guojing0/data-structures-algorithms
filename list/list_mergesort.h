@@ -1,7 +1,5 @@
-#include "list.h"
-
 template <typename T>
-void List<T>::mergeSort(ListNode<T> &p, int n) {
+void List<T>::mergeSort(ListNodePosi(T) &p, int n) {
     if (n < 2) {
         return;
     }
@@ -16,7 +14,7 @@ void List<T>::mergeSort(ListNode<T> &p, int n) {
 }
 
 template <typename T>
-void List<T>::merge(ListNode<T> &p, int n, List<T> &L, ListNode<T> q, int m) {
+void List<T>::merge(ListNodePosi(T) &p, int n, List<T> &L, ListNodePosi(T) q, int m) {
     ListNodePosi(T) pp = p->pred;
     while (m > 0) {
         if ((n > 0) && (p->data <= q->data)) {

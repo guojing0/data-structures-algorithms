@@ -4,15 +4,14 @@ template <typename T> class List {
 
 private:
     int _size;
-    ListNodePosi(T) header;
-    ListNodePosi(T) trailer;
+    ListNodePosi(T) header, trailer;
 
 protected:
     void init();
     int clear();
     void copyNodes(ListNodePosi(T), int);
     void merge(ListNodePosi(T)&, int, List<T>&, ListNodePosi(T), int);
-    void mergeSort(ListNodePosi(T), int);
+    void mergeSort(ListNodePosi(T)&, int);
     void selectionSort(ListNodePosi(T), int);
     void insertionSort(ListNodePosi(T), int);
 
@@ -59,7 +58,7 @@ public:
     ListNodePosi(T) insertB(ListNodePosi(T) p, T const& e);
     T remove(ListNodePosi(T) p);
     void merge(List<T>& L) {
-        merge(first(), size, L.first(), L._size);
+        merge(first(), _size, L, L.first(), L._size);
     }
     void sort(ListNodePosi(T) p, int n);
     void sort() {
@@ -71,3 +70,5 @@ public:
     void traverse(void(*)(T&));
     template <typename VST> void traverse(VST&);
 };
+
+#include "list_implement.h"
