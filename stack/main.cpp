@@ -25,10 +25,12 @@ void convertRec(Stack<char>& S, __int64_t n, int base) {
 int main()
 {
     Stack<char> stack1;
-    convertIter(stack1, 245, 2);
+    convertIter(stack1, 256, 2);
 
     while (!stack1.empty()) {
         cout << stack1.pop() << "";
     }
     cout << endl;
+
+    return 0;
 }
