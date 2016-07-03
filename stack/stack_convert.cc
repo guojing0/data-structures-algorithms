@@ -1,4 +1,7 @@
+#include <iostream>
 #include "stack.h"
+
+using namespace std;
 
 void convertIter(Stack<char>& S, __int64_t n, int base) {
     static char digit[] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9',
@@ -21,15 +24,13 @@ void convertRec(Stack<char>& S, __int64_t n, int base) {
 
 int main()
 {
-    Stack<char> stack1, stack2;
-    convertIter(stack1, 63, 2);
-    convertRec(stack2, 63, 2);
+    Stack<char> stack1;
+    convertIter(stack1, 256, 2);
+
     while (!stack1.empty()) {
         cout << stack1.pop() << "";
-        cout << endl;
     }
-    while (!stack2.empty()) {
-        cout << stack2.pop() << "";
-        cout << endl;
-    }
+    cout << endl;
+
+    return 0;
 }
