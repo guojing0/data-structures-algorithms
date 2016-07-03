@@ -1,23 +1,16 @@
 #include <iostream>
+
+#include "vector/vector.h"
+#include "vector/vector_bracket.h"
+#include "vector/vector_assignment.h"
+
 using namespace std;
 
-#include "stack/stack.h"
-
-bool paren(const char expr[], int lo, int hi) {
-    Stack<char> S;
-
-    for (int i = lo; i <= hi; ++i) {
-        if (expr[i] == '(' || expr[i] == '[' || expr[i] == '{') {
-            S.push(expr[i]);
-        } else if (S.empty()
-                   || S.pop() != ')' || S.pop() != ']' || S.pop() != '}') {
-            return false;
-        }
+int main()
+{
+    Vector<int> foo = {2, 4, 5};
+    for (int i = 0; i < 6; ++i) {
+        cout << foo[i] << endl;
     }
-    return S.empty();
-}
-
-int main() {
-    const char exp[] = "((()(())))";
-    cout << paren(exp, 0, 10);
+    return 0;
 }
