@@ -1,10 +1,13 @@
+#pragma once
+
 #include "listNode.h"
 
 template <typename T> class List {
 
 private:
     int _size;
-    ListNodePosi(T) header, trailer;
+    ListNodePosi(T) header;
+    ListNodePosi(T) trailer;
 
 protected:
     void init();
@@ -22,7 +25,7 @@ public:
     List(List<T> const& L);
     List(List<T> const& L, Rank r, int n);
     List(ListNodePosi(T) p, int n);
-    ~list();
+    ~List();
     Rank size() const {
         return _size;
     }

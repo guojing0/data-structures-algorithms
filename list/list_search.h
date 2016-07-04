@@ -1,4 +1,4 @@
-#include "list.h"
+#pragma once
 
 template <typename T>
 ListNodePosi(T) List<T>::search(T const &e, int n, ListNodePosi(T) p) const {

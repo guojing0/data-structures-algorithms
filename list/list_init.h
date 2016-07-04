@@ -1,3 +1,5 @@
+#pragma once
+
 template <typename T> void List<T>::init() {
     header = new ListNode<T>;
     trailer = new ListNode<T>;
