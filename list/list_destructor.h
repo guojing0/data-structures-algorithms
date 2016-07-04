@@ -1,4 +1,4 @@
-template <typename T> List<T>::~list() {
+template <typename T> List<T>::~List() {
     clear();
     delete header;
     delete trailer;
