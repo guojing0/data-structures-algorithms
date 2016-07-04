@@ -1,3 +1,5 @@
+#pragma once
+
 template <typename T>
 Rank Vector<T>::partition(Rank lo, Rank hi) {
     std::swap(_elem[lo], _elem[lo + rand() % (hi - lo + 1)]);
