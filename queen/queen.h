@@ -1,3 +1,5 @@
+#pragma once
+
 struct Queen {
     int x, y;
     Queen(int xx = 0, int yy = 0) : x(xx), y(yy) {};

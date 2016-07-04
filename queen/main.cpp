@@ -1,8 +1,10 @@
-#include <iostream>
+#include "queen_stack.h"
 
-using namespace std;
+int nSolu = 0;
+int nCheck = 0;
 
 int main() {
-    cout << "Hello, world!" << endl;
+    placeQueens(10);
+    cout << nSolu << " " << nCheck << endl;
     return 0;
 }

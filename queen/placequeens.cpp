@@ -1,6 +1,6 @@
 #include "queen_stack.h"
 
-void playQueens(int N) {
+void placeQueens(int N) {
     Stack<Queen> solu;
     Queen q(0, 0);
 
