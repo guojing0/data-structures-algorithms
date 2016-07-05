@@ -1,4 +1,4 @@
-#include "../fib/fib.h"
+#include "../math/math.h"
 
 template <typename T> const Rank fibSearch(T* A, T const& e, Rank lo, Rank hi) {
     Fib fib(hi - lo);
