@@ -1,5 +1,8 @@
 #pragma once
 
+#include <cstdlib>
+#include <utility>
+
 #include "vector_assignment.h"
 #include "vector_bracket.h"
 
