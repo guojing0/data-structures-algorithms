@@ -1,13 +1,26 @@
 #include <iostream>
 
-#include "math/math.h"
+#include "stack/stack.h"
 
 using namespace std;
 
 int main()
 {
-    for (int i = 0; i < 10; ++i) {
-        cout << fib(i) << " " << fac(i) << endl;
+    Stack<char> op;
+    Stack<int> val;
+    val.push(1);
+    val.push(2);
+    op.push('+');
+
+    int v = val.pop();
+    char o = op.pop();
+    switch (o) {
+        case '+':
+            cout << val.pop() + v << endl;
+            break;
+        default:
+            break;
     }
+
     return 0;
 }
