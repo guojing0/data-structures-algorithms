@@ -1,6 +1,6 @@
 #include "lispy-calc.h"
 
-double eval(char* expr) // (+ 1 2)
+double eval(char* expr) // TODO
 {
     Stack<char> ops;
     Stack<double> vals;
